@@ -6,6 +6,12 @@
     <title>Red Button Page</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        * {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Edge */
+        }
         .button-container, .text-container {
             height: 100vh;
             display: flex;
@@ -64,7 +70,7 @@
     </div>
     <div class="container text-container hidden" id="text-container">
         <div class="large-text" id="text-message">FUCK YES</div>
-        <img src="https://i.pinimg.com/originals/6e/1f/bb/6e1fbbbc2958cdbb5df1a2e54db85798.gif" alt="Clown Dancing" class="clown-gif hidden" id="clown-gif">
+        <img src="https://example.com/clown-dancing.gif" alt="Clown Dancing" class="clown-gif hidden" id="clown-gif">
     </div>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.2/dist/confetti.browser.min.js"></script>
     <script>
@@ -138,3 +144,4 @@
     </script>
 </body>
 </html>
+
